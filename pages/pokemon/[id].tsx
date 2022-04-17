@@ -12,13 +12,11 @@ interface Props {
 }
 
 const PokemonPage: NextPage<Props> = ({ pokemon }) => {
-  console.log(pokemon);
-
+ 
   const router = useRouter();
-  console.log(router.query);
-
+ 
   return (
-    <Layout title="Algun pokémon">
+    <Layout title={`Pokemon ${pokemon.name.toUpperCase()}`}>
       <Grid.Container css={{ marginTop: "5px" }} gap={2}>
         <Grid xs={12} sm={4}>
           <Card hoverable css={{ padding: "30px" }}>
@@ -89,7 +87,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
   const pokemons151 = [...Array(151)].map((value, index) => `${index + 1}`);
-  console.log(pokemons151);
+  
   return {
     paths: pokemons151.map((id) => ({
       params: { id },
