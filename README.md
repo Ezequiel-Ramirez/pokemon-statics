@@ -1,6 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Getting Started![Poke App](https://user-images.githubusercontent.com/78183135/163816214-e6f19184-ec3c-44d5-89a3-4261bf67e3c2.gif)
+
 
 First, run the development server:
 
